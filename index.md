@@ -20,14 +20,19 @@ permalink: /
 
             <li>
                 <div>
-                <a href = "{{ affiliation.link }}">
-                  <img src="{{ affiliation.logo }}">
-                </a>
-                </div>
+                  <div>
+                  <a href = "{{ affiliation.link }}">
+                    <img src="{{ affiliation.logo }}">
+                  </a>
+                  </div>
 
-                {{ affiliation.role }}<br>
-                {{ affiliation.organization }}<br>
-                {{ affiliation.location }}
+
+                  <span>
+                  {{ affiliation.role }}<br>
+                  {{ affiliation.organization }}<br>
+                  {{ affiliation.location }}
+                  </span>
+                </div>
 
             </li>
            {% endfor %}

@@ -23,6 +23,15 @@ I keep updating it as and when I get time.
   - [ ] Add ReCAM Post
 
 ## Updates
+
+**23 Nov 2020**
+  - Added Medium Link
+  - Fixed LinkedIn Link
+  - Changed max width
+  - Fixed Bio Link (earlier it led to Projects)
+  - Made _tils, _papers folder.
+  - Added TIL for 22nd.
+
 **22 Nov 2020**
   - Added two projects.
   - Made changes to yaml in projects, added attributes like image, caption, hovercaption, mentors, domains, etc.
