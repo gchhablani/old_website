@@ -8,6 +8,20 @@ name: Gunjan Chhablani
 # Short bio or description (displayed in the header)
 description:
 
+
+affiliations:
+  - role: Applications Engineer
+    organization: Oracle, India
+    location: Hyderabad,TN,India
+    logo: /images/affiliations/oraclelogo.png
+    link: https://www.oracle.com/in/index.html
+
+  - role: Research Collaborator
+    organization: UPMC
+    location: Pittsburgh, PA, USA
+    logo: /images/affiliations/upmclogo.png
+    link: https://ophthalmology.pitt.edu/
+
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
 
@@ -20,6 +34,7 @@ collections:
 
 # Includes an icon in the footer for each username you enter
 footer-links:
+  cvlink: https://drive.google.com/file/d/1yyAB8fvWQ5RGQtveccPu2Rp7SN5EP21-/view?usp=sharing
   dribbble:
   email: chhablani.gunjan@gmail.com
   facebook:

@@ -10,18 +10,24 @@ I keep updating it as and when I get time.
 ## To-Do
 - Design
   - [ ] Make Tags For Projects/Publications (Medium)
+  - [ ] Update Affiliations to have a center aligned block but left-aligned text. (High)
   - [ ] Make Tags clickable (and hence, searchable) (Low)
   - [ ] Make Search Bar (Low)
 - Content
-  - [ ] Update Picture
+  - [x] Update Picture
   - [ ] Add Medium Link
   - [ ] Make Papers Template
-  - [ ] Add PIDL post
-  - [ ] Add Twitter Post
+  - [x] Add PIDL post
+  - [x] Add Twitter Post
   - [ ] Add FMNist Post
   - [ ] Add ReCAM Post
 
 ## Updates
+**22 Nov 2020**
+  - Added two projects.
+  - Made changes to yaml in projects, added attributes like image, caption, hovercaption, mentors, domains, etc.
+  - Made affiliations sections automatic using liquid.
+  - Added a temporary code button, needs fixing, rendered everywhere.
 
 **12 Nov 2020**
   - Added Basic links
