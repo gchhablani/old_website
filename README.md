@@ -5,27 +5,45 @@ I started making this on 12<sup>th</sup> of November, 2020. I will post all the 
 
 I keep updating it as and when I get time.
 
-## To-Do
+## Tasks
+### Done
+- Content
+  - [x] Update Picture
+  - [x] Add Medium Link
+  - [x] Add ReCAM Post
+  - [x] Add PIDL post
+  - [x] Add Twitter Post
+
+### Ongoing
+- Content
+  - [ ] Make Papers Template
+  - [ ] Add HMC Post
+  - [ ] Need to add link for PIDL in Bio
+
+### To-Do
 - Design
   - [ ] Make Tags For Projects/Publications (Medium)
-  - ~Update Affiliations to have a center aligned block but left-aligned text. (High)~ Comment: Not very important.
   - [ ] Make Tags clickable (and hence, searchable) (Low)
   - [ ] Make Search Bar (Low)
   - [ ] Need to make "Mini-Projects" for ongoing competitions, those without much substantial work. (High)
     - [ ] Table Layout, 2 column.
+  - [ ] Allow viewers to create Google Calendar events (Medium)
+  - [ ] Add a hit counter (Low)
+
+
+### Cancelled
+- Design
+  - ~Update Affiliations to have a center aligned block but left-aligned text. (High)~ Comment: Not very important.
+
 - Content
-  - [x] Update Picture
-  - [x] Add Medium Link
-  - [ ] Make Papers Template
-  - [x] Add PIDL post
-  - [x] Add Twitter Post
-  - ~Add FMNist Post~ Comment: Not so important project.
-  - [x] Add ReCAM Post
-  - [ ] Add HMC Post
+    - ~Add FMNist Post~ Comment: Not so important project.
 
 ## Updates
-
+**25 Nov 2020**
+  - Added empty TIL entries for 23,24,25. :(
 **23 Nov 2020**
+  - Commented Blogs Link
+  - Updated Tasks in README.md
   - Added ReCAM Post
   - Fixed a typo
   - Added Medium Link
