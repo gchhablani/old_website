@@ -41,6 +41,8 @@ I keep updating it as and when I get time.
 ## Updates
 **25 Nov 2020**
   - Added empty TIL entries for 23,24,25. :(
+  - Fixed Spacing issue just here.
+
 **23 Nov 2020**
   - Commented Blogs Link
   - Updated Tasks in README.md

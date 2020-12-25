@@ -9,6 +9,8 @@ With everyday bringing new challenges and problems, it is easy to forget what I'
 
 This page is specific to my learnings in research/programming, be it in Web D/ML/DL/CV/NLP. Basically, any of the "CS stuff" I do.
 
+I have not been able to update things accurately till 12/25/2020.
+
 *****
 
 {% for til in site.tils %}
