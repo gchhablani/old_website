@@ -1,2 +1,0 @@
-I"X<p>Built a system for analyzing and identifying extremism promotion in tweets using ML, and detecting relevant features to prevent the same in a semi-supervised fashion. The tweets were collected using tools like Twitter API (Twython), and the pre-processing and feature-engineering was performed using GrammarBot, LiWC and TextRazor APIs.</p>
-:ET

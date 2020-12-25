@@ -14,5 +14,5 @@ for i in range(1,delta+1):
     date = (max_date+timedelta(days=i)).strftime("%Y-%m-%d")
     title = date+'.md'
     with open(os.path.join(LOC, title),'w') as f:
-        f.write("---\nlayout: til\ndate: {}\n---\n-")
+        f.write(f"---\nlayout: til\ndate: {date}\n---\n-")
     print(title)
