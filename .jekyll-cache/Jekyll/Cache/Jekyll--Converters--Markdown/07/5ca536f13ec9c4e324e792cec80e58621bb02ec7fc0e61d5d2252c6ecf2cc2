@@ -1,0 +1,6 @@
+I"�<ul>
+  <li>To use random seed at every piece of code where anything random is involved. Even if you think you won’t possibly repeat it, there may be circumstances where you have to.</li>
+  <li>Save any of those weights, models, matrices which are generated as a result of that randomness for reproducibility.</li>
+  <li>Read <a href="https://medium.com/@jameshamann/displaying-medium-posts-on-your-jekyll-website-7eef230309e4">this</a> medium post on how to display Medium Posts on a Jekyll website. However, GitHub pages doesn’t allow you to add Jekyll plugins. Need some <a href="https://medium.com/@mcred/supercharge-github-pages-with-jekyll-and-travis-ci-699bc0bde075">thing</a> extra.</li>
+</ul>
+:ET
