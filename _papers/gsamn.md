@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2020-12-29
 title: 'A Gated Self-attention Memory Network for Answer Selection'
 permalink: /papers/gsamn
 usemathjax: true
