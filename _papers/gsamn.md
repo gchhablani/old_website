@@ -104,7 +104,7 @@ Tuning on dev set:
 		- BERT + GSAMN
 		- BERT + Transfer Learning	 
 - **GSAMN vs Transformers**
-	- Check whether not due to just extra parameters : ${\color{green}{\text{Nice}}}$
+	- Check whether not due to just extra parameters : ${color{green}{\text{Nice}}}$
 		- Stack 6 Transformer layers on Top of BERT.
 			- Didn't perform as well, even with Transfer Learning.
 - **GSAMN vs Compare-Aggregate**
