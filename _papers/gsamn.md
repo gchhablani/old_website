@@ -7,6 +7,7 @@ usemathjax: true
 
 ### Problems with Compare-Aggregate:
 - Encode Question-Candidate pairs into context vector representation separately.
+
 ### Approach
 -	Gated Self-attention Memory Networks for Answer Selection
 
@@ -82,19 +83,19 @@ usemathjax: true
 
 
 
-**Metrics**
-- Mean Average Precision
-- Mean Reciprocal Rank
+- **Metrics**
+	- Mean Average Precision
+	- Mean Reciprocal Rank
 
 
-**Hyperparameters**
-Tuning on dev set:
-- Fine-tune BERT embeddings during training.
-- 2 Hops (probably due to small sized datasets - TrecQA and WikiQA) $\color{blue}{\text{But they fine-tuned, didn't they? Is there a possible problem with pre-training, then?}}$
-- Adam - lr: 1e-5; betas = [0.9,0.999];
-- L2 decay : 0.01
-- Warmup first 10% of total steps.
-- Linear Decay of LR.
+- **Hyperparameters**
+	- Fine-tune BERT embeddings during training.
+	- 2 Hops (probably due to small sized datasets - TrecQA and WikiQA) $\color{blue}{\text{But they fine-tuned, didn't they? Is there a possible problem with pre-training, then?}}$
+	- Adam - lr: 1e-5; betas = [0.9,0.999];
+	- L2 decay : 0.01
+	- Warmup first 10% of total steps.
+	- Linear Decay of LR.
+	- Tuning on Dev Set.
 
 ### Analysis & Results
 - **Previous Methods**
@@ -104,7 +105,7 @@ Tuning on dev set:
 		- BERT + GSAMN
 		- BERT + Transfer Learning	 
 - **GSAMN vs Transformers**
-	- Check whether not due to just extra parameters : ${color{green}{\text{Nice}}}$
+	- Check whether not due to just extra parameters : ${\color{green}{\text{Nice}}}$
 		- Stack 6 Transformer layers on Top of BERT.
 			- Didn't perform as well, even with Transfer Learning.
 - **GSAMN vs Compare-Aggregate**
