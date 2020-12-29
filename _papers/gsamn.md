@@ -82,12 +82,12 @@ usemathjax: true
 
 
 
-#### Metrics
+**Metrics**
 - Mean Average Precision
 - Mean Reciprocal Rank
 
 
-#### Hyperparameters
+**Hyperparameters**
 Tuning on dev set:
 - Fine-tune BERT embeddings during training.
 - 2 Hops (probably due to small sized datasets - TrecQA and WikiQA) $\color{blue}{\text{But they fine-tuned, didn't they? Is there a possible problem with pre-training, then?}}$
