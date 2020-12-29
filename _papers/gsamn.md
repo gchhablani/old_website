@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2020-12-29
 title: 'A Gated Self-attention Memory Network for Answer Selection'
 permalink: /papers/gsamn
 usemathjax: true
@@ -7,6 +8,7 @@ usemathjax: true
 
 ### Problems with Compare-Aggregate:
 - Encode Question-Candidate pairs into context vector representation separately.
+
 ### Approach
 -	Gated Self-attention Memory Networks for Answer Selection
 
@@ -82,19 +84,19 @@ usemathjax: true
 
 
 
-#### Metrics
-- Mean Average Precision
-- Mean Reciprocal Rank
+- **Metrics**
+	- Mean Average Precision
+	- Mean Reciprocal Rank
 
 
-#### Hyperparameters
-Tuning on dev set:
-- Fine-tune BERT embeddings during training.
-- 2 Hops (probably due to small sized datasets - TrecQA and WikiQA) $\color{blue}{\text{But they fine-tuned, didn't they? Is there a possible problem with pre-training, then?}}$
-- Adam - lr: 1e-5; betas = [0.9,0.999];
-- L2 decay : 0.01
-- Warmup first 10% of total
-- Linear Decay of LR.
+- **Hyperparameters**
+	- Fine-tune BERT embeddings during training.
+	- 2 Hops (probably due to small sized datasets - TrecQA and WikiQA) $\color{blue}{\text{But they fine-tuned, didn't they? Is there a possible problem with pre-training, then?}}$
+	- Adam - lr: 1e-5; betas = [0.9,0.999];
+	- L2 decay : 0.01
+	- Warmup first 10% of total steps.
+	- Linear Decay of LR.
+	- Tuning on Dev Set.
 
 ### Analysis & Results
 - **Previous Methods**
