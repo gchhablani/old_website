@@ -13,12 +13,13 @@ I keep updating it as and when I get time.
   - [x] Add ReCAM Post
   - [x] Add PIDL post
   - [x] Add Twitter Post
+  - [x] Make Papers Template
 
 ### Ongoing
 - Content
-  - [ ] Make Papers Template
   - [ ] Add HMC Post
   - [ ] Need to add link for PIDL in Bio
+  - [ ] Link Paper Summaries
 
 ### To-Do
 - Design
@@ -29,6 +30,9 @@ I keep updating it as and when I get time.
     - [ ] Table Layout, 2 column.
   - [ ] Allow viewers to create Google Calendar events (Medium)
   - [ ] Add a hit counter (Low)
+  - [ ] Pagination in TIL folder (Medium)
+  - [ ] Need domains in papers.
+  - [ ] Need authors in papers.
 
 
 ### Cancelled
@@ -39,6 +43,14 @@ I keep updating it as and when I get time.
     - ~Add FMNist Post~ Comment: Not so important project.
 
 ## Updates
+**29 Dec 2020**
+  - Fixed Bio link. Wasn't working properly on TIL.
+  - Fixed paper summaries links on TIL page. Needed a permalink.
+
+**25 Dec 2020**
+  - Added a tiny snippet for TIL file generation till current date.
+  - Sorted entries by reverse in TIL.
+  - Fixed Horizontal Rule in TIL.
 **25 Nov 2020**
   - Added empty TIL entries for 23,24,25. :(
   - Fixed Spacing issue just here.

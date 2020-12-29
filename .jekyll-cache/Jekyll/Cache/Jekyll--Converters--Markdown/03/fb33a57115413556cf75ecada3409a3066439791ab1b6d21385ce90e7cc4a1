@@ -1,0 +1,19 @@
+I"ª<h2 id="contributions">Contributions</h2>
+<ul>
+  <li>Gated Self-attention Memory Networks for Answer Selection
+    <ul>
+      <li>Combines two main ideas:
+        <ol>
+          <li>Gated-Attention Mechanism from GAReaders (Dhingra et al., 2017)
+            <ul>
+              <li>Regular attention works like so:</li>
+            </ul>
+
+            <p>$$</p>
+          </li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+</ul>
+:ET

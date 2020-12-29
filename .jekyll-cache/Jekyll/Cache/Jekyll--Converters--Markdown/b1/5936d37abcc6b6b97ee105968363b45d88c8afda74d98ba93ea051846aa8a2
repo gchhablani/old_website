@@ -1,0 +1,149 @@
+I"�<h2 id="contributions">Contributions</h2>
+<h3 id="approach">Approach</h3>
+<ul>
+  <li>
+    <p>Gated Self-attention Memory Networks for Answer Selection</p>
+
+    <ul>
+      <li>Builds upon two main ideas:
+        <ul>
+          <li>
+            <p>Gated-Attention Mechanism from GAReaders (Dhingra et al., 2017)</p>
+
+            <ul>
+              <li><strong>Regular Attention</strong>: Given a context vector $ \mathbf{c} $ and an input sequence vector representation $X = \begin{bmatrix}\mathbf{x_{1}\dots x_{n}}\end{bmatrix}$:</li>
+            </ul>
+
+\[\alpha_{i} = \frac{\exp{(\mathbf{c}^{T}\mathbf{x}_{j})}}{\sum_{j\in \begin{bmatrix} 1\dots n\end{bmatrix}}{\exp{(\mathbf{c}^{T}\mathbf{x}_{j})}}}\]
+
+            <ul>
+              <li><strong>Gated Attention</strong>: Instead of calculating a single attention value for each component and combining, make a vector for each.</li>
+            </ul>
+
+\[\mathbf{g}_{i} = \sigma(f(\mathbf{c},\mathbf{x}_{i}))\]
+
+            <ul>
+              <li><strong>Gated Self-Attention Mechanism</strong>(Proposed): The gating in gated attention is done based on context vector and single input vector. They want - self-attention + entire sequences as well. Hence, a different kind of vector is calculated as follows:</li>
+            </ul>
+
+\[\mathbf{v}^{j} = \mathbf{W}\mathbf{x}_{j} + \mathbf{b} ; \mathbf{v}^{c} = \mathbf{W}\mathbf{c} + \mathbf{b} \\
+
+s^{j}_{i} = \mathbf{x}_{i}^{T}\mathbf{v}^{j}; s^{j}_{i} = \mathbf{x}_{i}^{T}\mathbf{v}^{c} \\
+
+\alpha_{i}^{j} = \frac{\exp{(s_{i}^{j})}}{\sum_{k\in \begin{bmatrix} 1\dots n\end{bmatrix}}{\exp{(s_{i}^{k})}+\exp{(s_{i}^{c})}}}\\
+
+\alpha_{i}^{c} = \frac{\exp{(s_{i}^{c})}}{\sum_{k\in \begin{bmatrix} 1\dots n\end{bmatrix}}{\exp{(s_{i}^{k})}+\exp{(s_{i}^{c})}}} \\
+
+\begin{align*}
+\mathbf{g}_{i} = &amp; f_{i}(c, X)\\
+ = &amp; \sigma \left( \sum_{j}(\alpha_{i}^{j}\mathbf{x}^{j}) + \alpha_{i}^{c}\mathbf{c}  \right)
+\end{align*}\]
+          </li>
+          <li>
+            <p>Memory-Networks (Sukhbaatar et al., 2015)</p>
+            <ul>
+              <li>They try to overcome the limitation of having a single control vector at every hop by combining GSAM with memory network architecture. Thus, creating the GSAMN. Let $\mathbf{k}$ denote the $k^{th}$ reasoning hop, the memory cells are updated as:</li>
+            </ul>
+
+\[\mathbf{g}_{i} = f_{i}(\mathbf{c}_{k},X)\\
+
+      \mathbf{x}_{i}^{k+1} = \mathbf{g}_{i} \odot \mathbf{x}_{i}^{k}\\\]
+
+            <ul>
+              <li>Update the controller using this gated self-attention and traditional aggregation update, assume no weighting is required as self-attention is enough :</li>
+            </ul>
+
+\[\mathbf{g}_{c} = f_{c}(\mathbf{c}_{k},X)\\
+
+  \mathbf{c}_{k+1} = \mathbf{g}_{c} \odot \mathbf{c}_{k} + \frac{1}{n} \sum_{i}\mathbf{x}_{i}^{k+1}\\ \color{red}{\text{(Error in this notation, should be}\ \mathbf{c}^{k}\text{)}}\]
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="datasets-">Datasets :</h3>
+<ul>
+  <li>Crawled StackExchange QnAs for pre-training.
+    <ul>
+      <li>Preprocessing:
+        <ul>
+          <li>Remove non-relevant answers for positive examples (upvotes&lt;2)</li>
+          <li>Random answers for negative.</li>
+        </ul>
+      </li>
+      <li>Code: https://github.com/laituan245/StackExchangeQA</li>
+      <li>628706 positive and 9874758 negative examples.</li>
+    </ul>
+  </li>
+  <li>TrecQA
+    <ul>
+      <li>Preprocessing:
+        <ul>
+          <li>Clean Version : Remove no answer/ only pos/neg answer questions.</li>
+        </ul>
+      </li>
+      <li>1229/65/68 questions, 53417/1117/1442 Q-A pairs. (train/dev/test)</li>
+    </ul>
+  </li>
+  <li>WikiQA
+    <ul>
+      <li>Preprocessing:
+        <ul>
+          <li>Remove questions with no answer</li>
+        </ul>
+      </li>
+      <li>873/126/243 Q, 8627/1130/2351 Q-A pairs.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="training">Training</h3>
+<ul>
+  <li>
+    <p>Convert the problem to binary-classification: They train concatenate the answer in the question and then predict 1 or 0, based on whether the answer is correct or not. They use the final context/controller state $\mathbf{c}_{T}$ as a representation, and do a sigmoid on it’s linear transform (one neural netowk layer).</p>
+  </li>
+  <li>
+    <p>Controller state is randomly intialized. Input vectors are taken from any embedding. Can be GloVe, ElMo, etc. They use BERT (base)</p>
+  </li>
+</ul>
+
+<h4 id="metrics">Metrics</h4>
+<ul>
+  <li>Mean Average Precision</li>
+  <li>Mean Reciprocal Rank</li>
+</ul>
+
+<h4 id="hyperparameters">Hyperparameters</h4>
+<p>Tuning on dev set:</p>
+<ul>
+  <li>Fine-tune BERT embeddings during training.</li>
+  <li>2 Hops (probably due to small sized datasets - TrecQA and WikiQA) $\color{blue}{\text{But they fine-tuned, didn’t they? Is there a possible problem with pre-training, then?}}$</li>
+  <li>Adam - lr: 1e-5; betas = [0.9,0.999];</li>
+  <li>L2 decay : 0.01</li>
+  <li>Warmup first 10% of total</li>
+  <li>Linear Decay of LR.</li>
+</ul>
+
+<h3 id="analysis-results">Analysis, Results</h3>
+<ul>
+  <li><strong>Previous Methods</strong>
+    <ul>
+      <li>BERT + GSAMN + Transfer Learning is better than just BERT</li>
+    </ul>
+  </li>
+  <li><strong>Ablation Analysis</strong>
+  Both better than BERT, combination best:
+      - BERT + GSAMN
+      - BERT + Transfer Learning</li>
+  <li><strong>GSAMN vs Transformers</strong></li>
+</ul>
+
+<h3 id="doubts">Doubts</h3>
+<ul>
+  <li>Meaning of the sentence : “We use affine-transformed inputs v and x
+to calculate the self-attention instead of just x to
+break the attention symmetry phenomenon.” (2.1)</li>
+</ul>
+:ET

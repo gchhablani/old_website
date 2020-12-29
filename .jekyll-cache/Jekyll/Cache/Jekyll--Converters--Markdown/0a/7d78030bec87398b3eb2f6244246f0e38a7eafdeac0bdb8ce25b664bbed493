@@ -1,16 +1,46 @@
-I"<p>I was inspired by <a href="https://adityalahiri.github.io">Aditya Lahiri</a> to start this section.</p>
+I"L<p>I was inspired by <a href="https://adityalahiri.github.io">Aditya Lahiri</a> to start this section.</p>
 
 <p>With everyday bringing new challenges and problems, it is easy to forget what I’ve learned yesterday. Hence, this page is here to keep a track of what I’m learning and to make sense of the progress that I make.</p>
 
 <p>This page is specific to my learnings in research/programming, be it in Web D/ML/DL/CV/NLP. Basically, any of the “CS stuff” I do.</p>
 
-<p>I have not been able to update things accurately till 12/25/2020.</p>
+<p>I have not been able to update things accurately till 12/25/2020. Post that, I have tried to put up everything.</p>
+
+<hr />
+
+<h3>December 28, 2020</h3>
+<div>
+    <ul>
+  <li>Read this paper on Self-Attention Memory Networks. Summary can be found here.</li>
+</ul>
+
+  </div>
+
+<hr />
+
+<h3>December 27, 2020</h3>
+<div>
+    <p>-</p>
+
+  </div>
+
+<hr />
+
+<h3>December 26, 2020</h3>
+<div>
+    <ul>
+  <li>Learnt about multi-label classification techniques - OneVRest,Label Powerset, Binary Relevance, Classifier Chains, and Adapted Algorithms - <a href="https://towardsdatascience.com/journey-to-the-center-of-multi-label-classification-384c40229bff">here</a> and <a href="https://www.analyticsvidhya.com/blog/2017/08/introduction-to-multi-label-classification/">here</a></li>
+</ul>
+
+  </div>
 
 <hr />
 
 <h3>December 25, 2020</h3>
 <div>
-    <p>-</p>
+    <ul>
+  <li>Read about <a href="http://git-scm.com/book/en/v2/Git-Tools-Submodules">Git submodules</a>.</li>
+</ul>
 
   </div>
 

@@ -1,0 +1,41 @@
+I"Š<h2 id="contributions">Contributions</h2>
+
+<ul>
+  <li>
+    <p>Gated Self-attention Memory Networks for Answer Selection</p>
+
+    <ul>
+      <li>Builds upon two main ideas:</li>
+      <li>
+        <p>Gated-Attention Mechanism from GAReaders (Dhingra et al., 2017)</p>
+
+        <ul>
+          <li><strong>Regular Attention</strong>: Given a context vector $ \mathbf{c} $ and an input sequence vector representation $X = \begin{bmatrix}\mathbf{x<em>{1}\dots x</em>{n}}\end{bmatrix}$:</li>
+        </ul>
+
+\[\alpha*{i} = \frac{\exp{(\mathbf{c}^{T}\mathbf{x}*{j})}}{\sum*{j\in \begin{bmatrix} 1\dots n\end{bmatrix}}{\exp{(\mathbf{c}^{T}\mathbf{x}*{j})}}}\]
+
+        <ul>
+          <li><strong>Gated Attention</strong>: Instead of calculating a single attention value for each component and combining, make a vector for each.</li>
+        </ul>
+
+        <p>\(\mathbf{g}*{i} = \sigma(f(\mathbf{c},\mathbf{x}*{i}))\) - <strong>Gated Self-Attention Mechanism</strong>(Proposed): The gating in gated attention is done based on context vector and single input vector. They want - self-attention + entire sequences as well.</p>
+      </li>
+    </ul>
+
+\[\mathbf{v}^{j} = \mathbf{W}\mathbf{x}_{j} + \mathbf{b} ; \mathbf{v}^{c} = \mathbf{W}\mathbf{c} + \mathbf{b} \\
+
+s^{j}*{i} = \mathbf{x}*{i}^{T}\mathbf{v}^{j}; s^{j}*{i} = \mathbf{x}*{i}^{T}\mathbf{v}^{c} \\
+
+\alpha*{i}^{j} = \frac{\exp{(\mathbf{s}*{i}^{j}\mathbf{x}*{j})}}{\sum*{j\in \begin{bmatrix} 1\dots n\end{bmatrix}}{\exp{(\mathbf{c}^{T}\mathbf{x}_{j})}}}\]
+
+    <ol>
+      <li>Memory-Networks (Sukhbaatar et al., 2015)</li>
+    </ol>
+  </li>
+</ul>
+
+<h2 id="training">Training</h2>
+
+<h3 id="hyperparameters">Hyperparameters</h3>
+:ET

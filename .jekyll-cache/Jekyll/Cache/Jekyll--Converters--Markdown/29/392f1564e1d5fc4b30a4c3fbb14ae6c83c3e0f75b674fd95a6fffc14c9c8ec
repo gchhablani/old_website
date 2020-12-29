@@ -1,0 +1,26 @@
+I"B<h2 id="contributions">Contributions</h2>
+<ul>
+  <li>Gated Self-attention Memory Networks for Answer Selection
+    <ul>
+      <li>Combines two main ideas:
+        <ol>
+          <li>Gated-Attention Mechanism from GAReaders (Dhingra et al., 2017)
+            <ul>
+              <li><strong>Regular attention</strong>:
+  Given a context vector $ \mathbf{c} $ and an input sequence vector representation $X =  \begin{bmatrix}\mathbf{x_{1}\dots x_{n}}\end{bmatrix}$</li>
+            </ul>
+
+\[\mathbf \\
+ \alpha_i = \frac{\exp{(\mathbf{c^{T}x_{j}})}}{\sum_{j\in \begin{bmatrix} 1\dots n\end{bmatrix}{\exp{(\mathbf{c^{T}x_{j}})}}}\]
+          </li>
+          <li>Memory-Networks (Sukhbaatar et al., 2015)</li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="training">Training</h2>
+
+<h3 id="hyperparameters">Hyperparameters</h3>
+:ET
