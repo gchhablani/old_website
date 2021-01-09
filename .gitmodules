@@ -1,0 +1,3 @@
+[submodule "scripts/pseudocode.js"]
+	path = scripts/pseudocode.js
+	url = https://github.com/SaswatPadhi/pseudocode.js
