@@ -30,7 +30,7 @@ usemathjax: true
 
 			$$ \mathbf{v}^{j} = \mathbf{W}\mathbf{x}_{j} + \mathbf{b} ; \mathbf{v}^{c} = \mathbf{W}\mathbf{c} + \mathbf{b} \\
 
-			s^{j}_{i} = \mathbf{x}_{i}^{T}\mathbf{v}^{j}; s^{j}_{i} = \mathbf{x}_{i}^{T}\mathbf{v}^{c} \\
+			s^{j}_{i} = \mathbf{x}_{i}^{T}\mathbf{v}^{j}; s^{j}_{c} = \mathbf{x}_{i}^{T}\mathbf{v}^{c} \\
 
 			\alpha_{i}^{j} = \frac{\exp{(s_{i}^{j})}}{\sum_{k\in \begin{bmatrix} 1\dots n\end{bmatrix}}{\exp{(s_{i}^{k})}+\exp{(s_{i}^{c})}}}\\
 
