@@ -43,6 +43,8 @@ I keep updating it as and when I get time.
     - ~Add FMNist Post~ Comment: Not so important project.
 
 ## Updates
+**17 Jan 2020**
+  - Remove empty posts automatically from TILs
 **10 Jan 2020**
   - Added pseudocode.js to handle Algorithms in LaTeX.
 **29 Dec 2020**

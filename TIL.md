@@ -14,6 +14,11 @@ I have not been able to update things accurately till 12/25/2020. Post that, I h
 *****
 {% assign sorted = site.tils|sort : 'date'|reverse %}
 {% for til in sorted %}
+
+  {% assign content = til.content | strip_newlines %}
+  {% if content == "" or content == nil or content == blank or content == "<p>-</p>" %}
+    {% continue %}
+  {% endif %}
   <h3>{{ til.date | date: "%B %e, %Y" }}</h3>
   <div>
     {{ til.content }}
