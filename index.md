@@ -54,7 +54,7 @@ Apart from that, I am highly interested in deep learning and its applications an
 
 In the little "personal" time that I get, I love reading self-help books, going out for a stroll, and listening to music/podcasts. I am also big on binge-watching and have watched over 40 TV shows.
 
-I'm always up for collaboration, so if you're interesting in working with me, I would be immensely pleased to hear from you. :)
+I'm always up for collaboration, so if you're interested in working with me, I would be immensely pleased to hear from you. :)
 
 
 -----
