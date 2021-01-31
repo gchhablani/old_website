@@ -9,7 +9,7 @@ permalink: /
 <div style="float:none;overflow:hidden">
 
     <p>
-      <img class="cover" src="images/mypicture_2.jpg" alt="A picture of myself from 2020, clicked at Islands of Adventure, Universal Studios, Orlando, FL." title ="A picture of myself from 2020, clicked at Islands of Adventure, Universal Studios, Orlando, FL.">
+      <img class="cover" src="images/mypicture_1.jpg" alt="Happy times @ Bay 15, Goa, India." title ="Happy times @ Bay 15, Goa, India.">
     </p>
 
 
