@@ -1,9 +1,21 @@
 ---
-layout: post
+layout: paper
 date: 2021-01-09
 title: 'Towards Interpreting BERT for Reading Comprehension Based QA'
 permalink: /papers/interpretBERTRC
 usemathjax: true
+venue: EMNLP
+year:  2020
+topics: 
+  - Interpretability
+  - BERT
+  - Integrated Gradients
+authors:
+  - name: Sahana Ramnath
+  - name: Preksha Nema
+  - name: Deep Sahni
+  - name: Mitesh M. Khapra
+paperurl: https://www.aclweb.org/anthology/2020.emnlp-main.261.pdf
 ---
 
 ### Problem Statement

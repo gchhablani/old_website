@@ -1,9 +1,21 @@
 ---
-layout: post
+layout: paper
 date: 2020-12-29
 title: 'A Gated Self-attention Memory Network for Answer Selection'
 permalink: /papers/gsamn
 usemathjax: true
+venue: ACL-IJCNLP
+year:  2019
+topics: 
+  - Question Answering
+  - Answer Selection
+  - Gated Self-Attention
+authors:
+  - name: Tuan Lai
+  - name: Quan Hung Tran
+  - name: Trung Bui
+  - name: Daisuke Kihara
+paperurl: https://www.aclweb.org/anthology/D19-1610.pdf
 ---
 
 ### Problems with Compare-Aggregate:

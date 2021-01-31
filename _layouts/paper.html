@@ -1,0 +1,39 @@
+--- 
+layout: default 
+---
+
+<article class="post">
+    <div>
+        <h2>
+            {{page.title }}
+            <a href="{{page.paperurl}}">
+                <img src = "/images/icons/urlicon.png"/ height="10px" width="10px" style="position:absolute;">
+            </a>
+        </h2>
+
+    </div>
+    <i>Venue: {{page.venue}} {{page.year}}</i>
+    {% assign authorsize = page.authors | size %} {% if authorsize !=0 %}
+    <br>
+    <i> Author(s):
+            {% for author in page.authors%}
+                {{ author.name }}{% if forloop.last == false %}, {% endif %}
+            {% endfor %}
+    </i> {% endif %}
+    <br>
+    <i> Topic(s):
+        {% for topic in page.topics%}
+            {{ topic }}{% if forloop.last == false %}, {% endif %}
+        {% endfor %}
+    </i>
+    <hr>
+    <div class="entry">
+        {{ content }}
+    </div>
+
+    <div class="date">
+        Written on {{ page.date | date: "%B %e, %Y" }}
+    </div>
+
+    {% include disqus.html %}
+</article>

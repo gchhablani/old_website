@@ -14,6 +14,9 @@ I keep updating it as and when I get time.
   - [x] Add PIDL post
   - [x] Add Twitter Post
   - [x] Make Papers Template
+- Design
+  - [x] Need domains in papers.
+  - [x] Need authors in papers.
 
 ### Ongoing
 - Content
@@ -31,8 +34,6 @@ I keep updating it as and when I get time.
   - [ ] Allow viewers to create Google Calendar events (Medium)
   - [ ] Add a hit counter (Low)
   - [ ] Pagination in TIL folder (Medium)
-  - [ ] Need domains in papers.
-  - [ ] Need authors in papers.
 
 
 ### Cancelled
@@ -43,6 +44,8 @@ I keep updating it as and when I get time.
     - ~Add FMNist Post~ Comment: Not so important project.
 
 ## Updates
+**31 Jan 2020**
+  - Add authors, venue and URL in papers.
 **17 Jan 2020**
   - Remove empty posts automatically from TILs
 **10 Jan 2020**

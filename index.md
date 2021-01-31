@@ -45,16 +45,18 @@ permalink: /
 ****
 
 ## Bio ##
-Hello there! I am Gunjan Chhablani, a recently graduated undergrad from [BITS Pilani Goa](https://bits-pilani.ac.in/), with a B.E. in Computer Science. I am currently working as an Applications Engineer at [Oracle, India](https://www.oracle.com/in/index.html) where I work on developing web applications for Oracle employees. Apart from that, I am highly interested in deep learning and its applications and use my personal time to work on research projects. My broad research interests include - computer vision, biomedical image analysis, natural language processing, and multi-modal learning.  Prior to this, I spent a wonderful semester at [University of Pittsburgh, Medical Center](https://www.upmc.com/) for my undergraduate thesis where I was advised by [Dr. Kunal Dansingani](http://ophthalmology.pitt.edu/people/kunal-k-dansingani-mbbs-ma-frcophth) and [Dr. Shan Suthaharan](https://sites.google.com/uncg.edu/shan-suthaharan/home?authuser=0). My work was focussed on analysing a novel weight initialization technique and its performance on choroid segmentation in OCT Scans.
 
+Hello there! I am Gunjan Chhablani, a recently graduated undergrad from [BITS Pilani Goa](https://bits-pilani.ac.in/), with a B.E. in Computer Science. I am currently working as an Applications Engineer at [Oracle, India](https://www.oracle.com/in/index.html) where I work on developing web applications for Human Capital Management. Apart from that, I am highly interested in deep learning and its applications and use my personal time to work on research projects. My broad research interests include - computer vision, biomedical image analysis, natural language processing, and multi-modal learning. Prior to this, I spent a wonderful semester at [University of Pittsburgh, Medical Center](https://www.upmc.com/) for my undergraduate thesis where I was advised by [Dr. Kunal Dansingani](http://ophthalmology.pitt.edu/people/kunal-k-dansingani-mbbs-ma-frcophth) and [Dr. Shan Suthaharan](https://sites.google.com/uncg.edu/shan-suthaharan/home?authuser=0). My work was focussed on analysing a novel weight initialization technique and its performance on choroid segmentation in OCT Scans.
 
-
-*****
+*****;
 
 ## News ##
-Hoping to add some good stuff here soon!
 
-*****
+[Jan 2021] I participated in SemEval-2021 Task-5 [Toxic Spans Detection](https://sites.google.com/view/toxicspans). GitHub and paper coming soon!
+[Jan 2021] I participated in SemEval-2021 Task-4 [Reading Comprehension for Abstract Meaning](https://competitions.codalab.org/competitions/26153). GitHub and paper coming soon!
+[Jan 2021] I participated in [ML Reproducibility Challenge 2020](https://paperswithcode.com/rc2020). GitHub and Report coming soon!
+*****;
+
 ## Projects ##
 
 <div class="posts">
