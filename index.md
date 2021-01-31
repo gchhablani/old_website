@@ -52,17 +52,22 @@ Prior to this, I spent a wonderful semester at [University of Pittsburgh, Medica
 
 Apart from that, I am highly interested in deep learning and its applications and use my personal time to work on research projects. My broad research interests include - computer vision, biomedical image analysis, natural language processing, and multi-modal learning.
 
-In the little "personal" time that I get, I love reading self-help books and listening to music. I am also big on binge-watching and have watched over 40 TV shows.
+In the little "personal" time that I get, I love reading self-help books, going out for a stroll, and listening to music/podcasts. I am also big on binge-watching and have watched over 40 TV shows.
 
-I'm always up for collaboration, so if you're interesting in working with me, I would be immensely pleased to hear from you.
-*****;
+I'm always up for collaboration, so if you're interesting in working with me, I would be immensely pleased to hear from you. :)
+
+
+-----
 
 ## News ##
 
 [Jan 2021] I participated in SemEval-2021 Task-5 [Toxic Spans Detection](https://sites.google.com/view/toxicspans). GitHub and paper coming soon!
+
 [Jan 2021] I participated in SemEval-2021 Task-4 [Reading Comprehension for Abstract Meaning](https://competitions.codalab.org/competitions/26153). GitHub and paper coming soon!
+
 [Jan 2021] I participated in [ML Reproducibility Challenge 2020](https://paperswithcode.com/rc2020). GitHub and Report coming soon!
-*****;
+
+-----
 
 ## Projects ##
 
