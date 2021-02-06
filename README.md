@@ -34,6 +34,8 @@ I keep updating it as and when I get time.
   - [ ] Allow viewers to create Google Calendar events (Medium)
   - [ ] Add a hit counter (Low)
   - [ ] Pagination in TIL folder (Medium)
+  - [ ] Add Experiences Page (High)
+  - [ ] Add Teaching Page (High)
 
 
 ### Cancelled
