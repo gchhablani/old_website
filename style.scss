@@ -19,7 +19,7 @@ html {
 
 body {
 	background: $white;
-  font: 17px/1.4 $georgia;
+  font: 17px/1.4 $helvetica;
   color: $lighterThanDarkGray;
 }
 
@@ -376,6 +376,29 @@ a.code{
     color: #0000EE;
   }
 
+}
+
+code{
+  font-size:15px;
+}
+
+div.highlight{
+  overflow: auto;
+  width:100%;
+  height:100%;
+  background-color: white;
+  border:0px;
+  box-shadow: none;
+  padding:0px;
+  margin:0px;
+}
+pre.highlight{
+  overflow: auto;
+  width:100%;
+  height:100%;
+  border:0px;
+  margin:0px;
+  box-shadow: none;
 }
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
