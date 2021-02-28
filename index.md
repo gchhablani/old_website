@@ -65,7 +65,7 @@ I'm always up for collaboration, so if you're interested in working with me, I w
 
 - [Jan 2021] I participated in SemEval-2021 Task-4 [Reading Comprehension of Abstract Meaning](https://competitions.codalab.org/competitions/26153). GitHub and paper coming soon!
 
-- [Jan 2021] I participated in [ML Reproducibility Challenge 2020](https://paperswithcode.com/rc2020). GitHub and Report coming soon!
+<!-- - [Jan 2021] I participated in [ML Reproducibility Challenge 2020](https://paperswithcode.com/rc2020). GitHub and Report coming soon! -->
 
 -----
 

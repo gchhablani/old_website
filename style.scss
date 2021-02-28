@@ -400,6 +400,13 @@ pre.highlight{
   margin:0px;
   box-shadow: none;
 }
+div.wrapper-masthead{
+  img{
+    width:20px;
+    height: auto;
+  }
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";

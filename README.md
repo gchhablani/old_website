@@ -46,11 +46,13 @@ I keep updating it as and when I get time.
     - ~Add FMNist Post~ Comment: Not so important project.
 
 ## Updates
-**31 Jan 2020**
+**1 Mar 2021**
+  - Replace links with icons.
+**31 Jan 2021**
   - Add authors, venue and URL in papers.
-**17 Jan 2020**
+**17 Jan 2021**
   - Remove empty posts automatically from TILs
-**10 Jan 2020**
+**10 Jan 2021**
   - Added pseudocode.js to handle Algorithms in LaTeX.
 **29 Dec 2020**
   - Fixed Bio link. Wasn't working properly on TIL.
