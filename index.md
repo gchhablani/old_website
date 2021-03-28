@@ -50,9 +50,9 @@ Hello there! I am Gunjan Chhablani, a recently graduated undergrad from [BITS Pi
 
 Prior to this, I spent a wonderful semester at [University of Pittsburgh, Medical Center](https://www.upmc.com/) for my undergraduate thesis where I was advised by [Dr. Kunal Dansingani](http://ophthalmology.pitt.edu/people/kunal-k-dansingani-mbbs-ma-frcophth) and [Dr. Shan Suthaharan](https://sites.google.com/uncg.edu/shan-suthaharan/home?authuser=0). My work focussed on analysing a novel weight initialization technique and its performance on choroid segmentation in OCT Scans.
 
-Apart from that, I am highly interested in deep learning and its applications and use my free time to work on research projects. My broad research interests include - computer vision, biomedical image analysis, natural language processing, and multi-modal learning.
+I am highly interested in deep learning and its applications and use my free time to work on research projects. My broad research interests include - computer vision, biomedical image analysis, natural language processing, and multi-modal learning.
 
-In the little "personal" time that I get, I love reading self-help books, going out for a stroll, and listening to music/podcasts. I am also big on binge-watching and have watched over 40 TV shows. Recently, I have also developed an interest in adding new datasets and solving issues on [🤗datasets](https://github.com/huggingface/datasets).
+In the little "personal" time that I get, I love reading self-help books, going out for a stroll, and listening to music/podcasts. Recently, I have also developed an interest in adding new datasets and solving issues on [🤗datasets](https://github.com/huggingface/datasets).
 
 I'm always up for collaboration, so if you're interested in working with me, I would be immensely pleased to hear from you. :)
 
