@@ -71,7 +71,7 @@ I'm always up for collaboration, so if you're interested in working with me, I w
 
 - [Sep 2020] I am joining Oracle India Pvt. Ltd. as an SWE.
 
-- [Sep 2020] I received the bronze medal for ranking third during my undergrad. See an edited clip of the felicitation ceremony [here](https://t.co/KFlL9NGDzR?amp=1) and we got featured in local news [1](https://www.thegoan.net/goa-news/three-bits-pilani-medal-winners-felicitated/61111.html), [2](https://goanewshub.com/bits-pilani-goa-medal-winners-felicitated-online/).
+- [Sep 2020] I received the bronze medal for ranking third during my undergrad. See an edited clip of the felicitation ceremony [here](https://t.co/KFlL9NGDzR?amp=1). We also got featured in local news - [1](https://www.thegoan.net/goa-news/three-bits-pilani-medal-winners-felicitated/61111.html), [2](https://goanewshub.com/bits-pilani-goa-medal-winners-felicitated-online/).
 
 -----
 
@@ -106,15 +106,15 @@ I'm always up for collaboration, so if you're interested in working with me, I w
     </div>
     <div>
     {% if project.paperlink %}
-       <a class="paper" href="{{ project.paperlink }}"> Paper </a>
+       <a class="paperlink" href="{{ project.paperlink }}"> Paper </a>
     {% endif %}
 
     {% if project.preprintlink %}
-       <a class="paper" href="{{ project.preprintlink }}"> Pre-print </a>
+       <a class="paperlink" href="{{ project.preprintlink }}"> Pre-print </a>
     {% endif %}
 
     {% if project.codelink %}
-       <a class="code" href="{{ project.codelink }}"> Code </a>
+       <a class="codelink" href="{{ project.codelink }}"> Code </a>
     {% endif %}
     </div>
 
