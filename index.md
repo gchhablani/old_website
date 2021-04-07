@@ -61,7 +61,7 @@ I'm always up for collaboration, so if you're interested in working with me, I w
 
 ## News ##
 
-- [March 2021] I participated in the HuggingFace XLSR Fine-tuning Week. A list of my model is available [here](https://huggingface.co/gchhablani).
+- [March 2021] I participated in the HuggingFace XLSR Fine-tuning Week. A list of my models is available [here](https://huggingface.co/gchhablani).
 
 - [Jan 2021] I participated in SemEval-2021 Task-5 [Toxic Spans Detection](https://sites.google.com/view/toxicspans). Check it [out](/#tsd).
 
@@ -81,7 +81,7 @@ I'm always up for collaboration, so if you're interested in working with me, I w
   {% assign sorted = site.projects | reverse %}
   {% for project in sorted %}
     <article class="post">
-    <h3 id="{{ project.id }}"><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></h3>
+    <h3 id="{{ project.link_id }}"><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></h3>
 
     <div class="projectinfo">
       {% assign mentorsize = project.mentors | size %}
