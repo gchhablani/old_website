@@ -63,9 +63,9 @@ I'm always up for collaboration, so if you're interested in working with me, I w
 
 - [March 2021] I participated in the HuggingFace XLSR Fine-tuning Week. A list of my models is available [here](https://huggingface.co/gchhablani).
 
-- [Jan 2021] I participated in SemEval-2021 Task-5 [Toxic Spans Detection](https://sites.google.com/view/toxicspans). Check it [out](/#tsd).
+- [Jan 2021] I participated in SemEval-2021 Task-5 [Toxic Spans Detection](https://sites.google.com/view/toxicspans). Feel free to check it [out](/#tsd).
 
-- [Jan 2021] I participated in SemEval-2021 Task-4 [Reading Comprehension of Abstract Meaning](https://competitions.codalab.org/competitions/26153). GitHub and paper coming soon!
+- [Jan 2021] I participated in SemEval-2021 Task-4 [Reading Comprehension of Abstract Meaning](https://competitions.codalab.org/competitions/26153). You can check it [here](/#recam).
 
 - [Jan 2021] I participated in [ML Reproducibility Challenge 2020](https://paperswithcode.com/rc2020). You can find our [report](https://openreview.net/pdf?id=LI1n_od-aEq) and [code](https://github.com/gchhablani/MLRC-2020-Towards-Interpreting-BERT-for-RCQA).
 
