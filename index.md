@@ -61,20 +61,27 @@ I'm always up for collaboration, so if you're interested in working with me, I w
 
 ## News ##
 
-- [Jan 2021] I participated in SemEval-2021 Task-5 [Toxic Spans Detection](https://sites.google.com/view/toxicspans). GitHub and paper coming soon!
+- [March 2021] I participated in the HuggingFace XLSR Fine-tuning Week. A list of my model is available [here](https://huggingface.co/gchhablani).
+
+- [Jan 2021] I participated in SemEval-2021 Task-5 [Toxic Spans Detection](https://sites.google.com/view/toxicspans). Check it [out](/#tsd).
 
 - [Jan 2021] I participated in SemEval-2021 Task-4 [Reading Comprehension of Abstract Meaning](https://competitions.codalab.org/competitions/26153). GitHub and paper coming soon!
 
-<!-- - [Jan 2021] I participated in [ML Reproducibility Challenge 2020](https://paperswithcode.com/rc2020). GitHub and Report coming soon! -->
+- [Jan 2021] I participated in [ML Reproducibility Challenge 2020](https://paperswithcode.com/rc2020). You can find our [report](https://openreview.net/pdf?id=LI1n_od-aEq) and [code](https://github.com/gchhablani/MLRC-2020-Towards-Interpreting-BERT-for-RCQA).
+
+- [Sep 2020] I am joining Oracle India Pvt. Ltd. as an SWE.
+
+- [Sep 2020] I received the bronze medal for ranking third during my undergrad. See an edited clip of the felicitation ceremony [here](https://t.co/KFlL9NGDzR?amp=1) and we got featured in local news [1](https://www.thegoan.net/goa-news/three-bits-pilani-medal-winners-felicitated/61111.html), [2](https://goanewshub.com/bits-pilani-goa-medal-winners-felicitated-online/).
 
 -----
 
 ## Projects ##
 
 <div class="posts">
-  {% for project in site.projects %}
+  {% assign sorted = site.projects | reverse %}
+  {% for project in sorted %}
     <article class="post">
-    <h3><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></h3>
+    <h3 id="{{ project.id }}"><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></h3>
 
     <div class="projectinfo">
       {% assign mentorsize = project.mentors | size %}
@@ -97,11 +104,19 @@ I'm always up for collaboration, so if you're interested in working with me, I w
 
       {% endif %}
     </div>
+    <div>
+    {% if project.paperlink %}
+       <a class="paper" href="{{ project.paperlink }}"> Paper </a>
+    {% endif %}
+
+    {% if project.preprintlink %}
+       <a class="paper" href="{{ project.preprintlink }}"> Pre-print </a>
+    {% endif %}
 
     {% if project.codelink %}
        <a class="code" href="{{ project.codelink }}"> Code </a>
     {% endif %}
-
+    </div>
 
 
     {% if project.image %}

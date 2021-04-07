@@ -1,5 +1,7 @@
 ---
 layout: project
+id: twitpsych
+date: 2020-9-12
 title: Understanding the psychology of online extremism promoters
 image: images/projects/tweets.png
 hovercaption: PCA Plots for Train, Val and Test with Threshold = 0.8 for separating Positive and Negative extremist tweets.
