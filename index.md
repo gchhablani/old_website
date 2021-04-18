@@ -46,7 +46,7 @@ permalink: /
 
 ## Bio ##
 
-Hello there! I am Gunjan Chhablani, a recently graduated undergrad from [BITS Pilani Goa](https://bits-pilani.ac.in/), with a B.E. in Computer Science. I am currently working as an Applications Engineer at [Oracle, India](https://www.oracle.com/in/index.html) where I work on developing web applications for Human Capital Management. 
+Hello there! I am Gunjan Chhablani, a 2020 graduate from [BITS Pilani Goa](https://bits-pilani.ac.in/), with a B.E. in Computer Science. I am currently working as an Applications Engineer at [Oracle, India](https://www.oracle.com/in/index.html) where I work on developing web applications for Human Capital Management. 
 
 Prior to this, I spent a wonderful semester at [University of Pittsburgh, Medical Center](https://www.upmc.com/) for my undergraduate thesis where I was advised by [Dr. Kunal Dansingani](http://ophthalmology.pitt.edu/people/kunal-k-dansingani-mbbs-ma-frcophth) and [Dr. Shan Suthaharan](https://sites.google.com/uncg.edu/shan-suthaharan/home?authuser=0). My work focussed on analysing a novel weight initialization technique and its performance on choroid segmentation in OCT Scans.
 
