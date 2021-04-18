@@ -61,6 +61,8 @@ I'm always up for collaboration, so if you're interested in working with me, I w
 
 ## News ##
 
+- [March 2021] Our papers on Toxic Spans Detection and ReCAM were accepted at SemEval-2021.
+
 - [March 2021] I participated in the HuggingFace XLSR Fine-tuning Week. A list of my models is available [here](https://huggingface.co/gchhablani).
 
 - [Jan 2021] I participated in SemEval-2021 Task-5 [Toxic Spans Detection](https://sites.google.com/view/toxicspans). Feel free to check it [out](/#tsd).
