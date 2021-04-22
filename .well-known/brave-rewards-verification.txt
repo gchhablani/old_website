@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: gchhablani.github.io
-Token: 5214bc1fc6dba4e215cba51cbeadfa10055a4ec548fc42e6da9ef4df8f5cf880
