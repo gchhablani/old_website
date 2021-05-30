@@ -9,7 +9,7 @@ With everyday bringing new challenges and problems, it is easy to forget what I'
 
 This page is specific to my learnings in research/programming, be it in Web D/ML/DL/CV/NLP. Basically, any of the "CS stuff" I do.
 
-I have not been able to update things accurately till 12/25/2020. Post that, I have tried to put up everything.
+Note that I don't update this page as frequently as I should, and a lot of details are missing.
 
 *****
 {% assign sorted = site.tils|sort : 'date'|reverse %}

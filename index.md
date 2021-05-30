@@ -52,7 +52,7 @@ Prior to this, I spent a wonderful semester at [University of Pittsburgh, Medica
 
 I am highly interested in deep learning and its applications and use my free time to work on research projects. My broad research interests include - computer vision, biomedical image analysis, natural language processing, and multi-modal learning.
 
-In the little "personal" time that I get, I love reading self-help books, going out for a stroll, and listening to music/podcasts. Recently, I have also developed an interest in adding new datasets and solving issues on [🤗datasets](https://github.com/huggingface/datasets).
+In the little "personal" time that I get, I love reading self-help books, going out for a stroll, and listening to music/podcasts. Recently, I have also developed an interest in adding new datasets and solving issues on [🤗datasets](https://github.com/huggingface/datasets). I am also trying to contribute [VisualBert](https://github.com/huggingface/transformers/pull/10534) to [🤗transformers](https://github.com/huggingface/transformers).
 
 I'm always up for collaboration, so if you're interested in working with me, I would be immensely pleased to hear from you. :)
 
@@ -60,6 +60,8 @@ I'm always up for collaboration, so if you're interested in working with me, I w
 -----
 
 ## News ##
+
+- [March 20201] We submitted a paper to [ESANN 2021](https://www.esann.org/) on Superpixel-level domain-knowledge infusion using graph networks. Check the pre-print [here](https://arxiv.org/abs/2105.09448).
 
 - [March 2021] Our papers on Toxic Spans Detection and ReCAM were accepted at SemEval-2021.
 

@@ -36,6 +36,7 @@ I keep updating it as and when I get time.
   - [ ] Pagination in TIL folder (Medium)
   - [ ] Add Experiences Page (High)
   - [ ] Add Teaching Page (High)
+  - [ ] Add archived/old projects section (Very High)
 
 
 ### Cancelled
