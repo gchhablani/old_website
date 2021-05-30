@@ -61,7 +61,7 @@ I'm always up for collaboration, so if you're interested in working with me, I w
 
 ## News ##
 
-- [March 20201] We submitted a paper to [ESANN 2021](https://www.esann.org/) on Superpixel-level domain-knowledge infusion using graph networks. Check the pre-print [here](https://arxiv.org/abs/2105.09448).
+- [March 2021] We submitted a paper to [ESANN 2021](https://www.esann.org/) on Superpixel-level domain-knowledge infusion using graph networks. Check the pre-print [here](https://arxiv.org/abs/2105.09448).
 
 - [March 2021] Our papers on Toxic Spans Detection and ReCAM were accepted at SemEval-2021.
 
