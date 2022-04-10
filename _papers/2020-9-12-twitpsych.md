@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: none
 link_id: twitpsych
 date: 2020-9-12
 title: Understanding the psychology of online extremism promoters
