@@ -7,15 +7,15 @@
 p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
   color: var(--global-text-color);
 }
-h2 {
-  font-size: 1.7em;
-}
-h3 {
-  font-size: 1.5em;
-}
-h4 {
-  font-size: 1.25em;
-}
+// h2 {
+//   font-size: 1.7em;
+// }
+// h3 {
+//   font-size: 1.5em;
+// }
+// h4 {
+//   font-size: 1.25em;
+// }
 
 hr {
   border-top: 2px solid var(--global-divider-color);
@@ -129,7 +129,7 @@ blockquote {
 
 .post-description {
   margin-bottom: 2rem;
-  font-size: 0.7rem;
+  // font-size: 0.7rem;
   a {
     color: inherit;
     &:hover {
