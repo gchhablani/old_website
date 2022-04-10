@@ -8,7 +8,7 @@ p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
   color: var(--global-text-color);
 }
 h2 {
-  font-size: 2em;
+  font-size: 1.7em;
 }
 h3 {
   font-size: 1.5em;
@@ -129,7 +129,7 @@ blockquote {
 
 .post-description {
   margin-bottom: 2rem;
-  font-size: 0.875rem;
+  font-size: 0.7rem;
   a {
     color: inherit;
     &:hover {
