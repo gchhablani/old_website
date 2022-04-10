@@ -1,99 +1,37 @@
+---
+layout: parse
+---
 <!DOCTYPE html>
-<html>
+<html lang="{{ site.lang }}">
+
+  <!-- Head -->
   <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-
-    {% include meta.html %}
-
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!-- for mathjax support -->
-   {% if page.usemathjax %}
-   <!--PseudoCode-->
-   <!--https://github.com/SaswatPadhi/pseudocode.js-->
-
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pseudocode@latest/build/pseudocode.min.css">
-   <script src="https://cdn.jsdelivr.net/npm/pseudocode@latest/build/pseudocode.min.js">
-   </script>
-<!-- 
-    <link rel="stylesheet" href="/scripts/pseudocode.js/docs/pseudocode.css">
-    <script src="/scripts/pseudocode.js/docs/pseudocode.css">
-    </script> -->
-
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-      tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      processEscapes: true,
-      processEnvironments: true,
-    },
-      TeX: { equationNumbers: { autoNumber: "AMS" } }
-      });
-    </script>
-
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML'>
-    </script>
-
-   {% endif %}
-
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  {%- if page.redirect -%}
+    <meta http-equiv="refresh" content="3; url={{ site.baseurl | prepend: site.url }}/" />
+  {%- endif -%}
+  {% include head.html %}
   </head>
 
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <!-- <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a> -->
+  <!-- Body -->
+  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <!-- <p class="site-description">{{ site.description }}</p> -->
-            <nav class="upper">
-              <!-- <a href="{{ site.baseurl }}/blog">Blog</a> -->
-              <a href="{{ site.baseurl }}/TIL">TIL</a>
-            </nav>
-          </div>
-          <hr class="top">
-          <nav style='width:100%;'>
-            <!-- <a style='width:12%;padding:4%' href="/#bio"><img src="/images/icons/about.png" title="Bio" alt="/#bio"/></a>
-            <a style='width:12%;padding:4%' href="{{ site.footer-links.cvlink }}"><img src="/images/icons/resume.png" title="CV" alt="{{ site.footer-links.cvlink }}"/></a>
-            <a style='width:12%;padding:4%' href="https://github.com/{{site.footer-links.github}}"><img src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/github.svg" title="GitHub" alt="https://github.com/{{site.footer-links.github}}"/></a>
-            <a style='width:12%;padding:4%' href="https://linkedin.com/in/{{site.footer-links.linkedin}}"><img src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/linkedin.svg" title="LinkedIn" alt="https://linkedin.com/in/{{site.footer-links.linkedin}}"/></a>
-            <a style='width:12%;padding:4%' href="https://twitter.com/{{site.footer-links.twitter}}"><img src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/twitter.svg" title="Twitter" alt="https://twitter.com/{{site.footer-links.twitter}}"/></a>
-            <a style='width:12%;padding:4%' href="https://{{site.footer-links.medium}}"><img src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/medium.svg" title="Medium" alt="https://{{site.footer-links.medium}}"/></a>
-            <a style='width:12%;padding:4%' href="mailto:{{ site.footer-links.email }}"><img src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/gmail.svg" title="GMail" alt="chhablani.gunjan@gmail.com"/></a>
-            <a style='width:12%;padding:4%' href="https://open.spotify.com/user/{{ site.footer-links.spotify }}"><img src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/spotify.svg" title="Spotify" alt="https://open.spotify.com/user/{{ site.footer-links.spotify }}"/></a> -->
-            <a style='width:12%;padding:4%' href="/#bio">Bio</a>
-            <a style='width:12%;padding:4%' href="{{ site.footer-links.cvlink }}">CV</a>
-            <a style='width:12%;padding:4%' href="https://github.com/{{site.footer-links.github}}">GitHub</a>
-            <a style='width:12%;padding:4%' href="https://linkedin.com/in/{{site.footer-links.linkedin}}">LinkedIn</a>
-            <a style='width:12%;padding:4%' href="https://twitter.com/{{site.footer-links.twitter}}">Twitter</a>
-            <!-- <a style='width:12%;padding:4%' href="https://{{site.footer-links.medium}}">Medium</a> -->
-            <a style='width:12%;padding:4%' href="mailto:{{ site.footer-links.email }}">E-mail</a>
-            <a style='width:12%;padding:4%' href="https://open.spotify.com/user/{{ site.footer-links.spotify }}">Spotify</a>
- 
-          </nav>
-        </header>
-      </div>
-    </div>
+    <!-- Header -->
+    {%- include header.html %}
 
-    <div id="main" role="main" class="container">
+    <!-- Content -->
+    <div class="container mt-5">
       {{ content }}
     </div>
 
-    <!-- <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div> -->
+    <!-- Footer -->
+    {%- include footer.html %}
 
-    {% include analytics.html %}
+    <!-- JavaScripts -->
+    {% include scripts/jquery.html %}
+    {% include scripts/bootstrap.html %}
+    {% include scripts/masonry.html %}
+    {% include scripts/misc.html %}
+    {% include scripts/mathjax.html %}
+    {% include scripts/analytics.html %}
   </body>
 </html>

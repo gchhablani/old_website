@@ -1,0 +1,63 @@
+<!-- _includes/projects.html -->
+<div class="papers">
+    <h2>Projects</h2>
+    {% assign sorted = site.papers | reverse %}
+    {% for project in sorted %}
+    <article class="post">
+        <h4 id="{{ project.link_id }}">{{ project.title }}</h4>
+
+        <div class="projectinfo">
+            {% assign mentorsize = project.mentors | size %}
+            {% if mentorsize !=0 %}
+            <i> Mentor(s):
+                {% for mentor in project.mentors %}
+                <a href="{{ mentor.link }}">{{ mentor.name }}</a>,
+                {% endfor %}
+            </i>
+            {% endif %}
+
+            {% assign domainsize = project.domains | size %}
+            {% if domainsize !=0 %}
+            <i> Domain(s):
+                {% for domain in project.domains %}
+                {{ domain }}
+                {% if forloop.last == false %}, {% endif %}
+                {% endfor %}
+            </i>
+
+            {% endif %}
+        </div>
+        <div>
+            {% if project.paperlink %}
+            <a class="paperlink" href="{{ project.paperlink }}"> Paper </a>
+            {% endif %}
+
+            {% if project.preprintlink %}
+            <a class="paperlink" href="{{ project.preprintlink }}"> Pre-print </a>
+            {% endif %}
+
+            {% if project.codelink %}
+            <a class="codelink" href="{{ project.codelink }}"> Code </a>
+            {% endif %}
+        </div>
+
+
+        {% if project.image %}
+        <figure>
+            <img src="{{ project.image }}" title="{{ project.hovercaption}}" style="width:70%;height:auto;">
+            <figcaption>{{ project.caption }}</figcaption>
+        </figure>
+        {% endif %}
+
+
+
+        <div class="entry">
+            {{ project.content }}
+        </div>
+        {% if forloop.last == false %}<hr class="project">{% endif %}
+
+
+        <!-- <a href="{{ site.baseurl }}{{ project.url }}" class="read-more">Read More</a> -->
+    </article>
+    {% endfor %}
+</div>
