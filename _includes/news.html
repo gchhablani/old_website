@@ -5,7 +5,7 @@
             <div class="table-responsive">
               <table class="table table-sm table-borderless">
               {%- assign news = site.news | reverse -%} 
-              {% for item in news limit: site.news_limit %} 
+              {% for item in news %} 
                 <tr>
                   <th scope="row">{{ item.date | date: "%b, %Y" }}</th>
                   <td>
@@ -16,10 +16,16 @@
                     {%- endif %} 
                   </td>
                 </tr>
-              {%- endfor %} 
+              {%- endfor %}
               </table>
             </div>
           {%- else -%} 
             <p>No news so far...</p>
-          {%- endif %} 
+          {%- endif %}
+          <div id="read-more-button">
+            <a nohref>Read more</a>
+          </div>
+          <div id="show-less-button">
+            <a nohref>Show less</a>
+          </div>
           </div>

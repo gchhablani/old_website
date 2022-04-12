@@ -1,5 +1,5 @@
             {%- if site.email -%}
-            <a href="mailto:{{ site.email | encode_email }}" title="email"><i class="fas fa-envelope"></i></a>
+            <a href="mailto:{{ site.email | encode_email }}" title="Email"><i class="fas fa-envelope"></i></a>
             {% endif %}
             {%- if site.orcid_id -%}
             <a href="https://orcid.org/{{ site.orcid_id }}" title="ORCID"><i class="ai ai-orcid"></i></a>
@@ -54,4 +54,7 @@
             {% endif %}
             {%- if site.rss_icon -%}
             <a href="{{ site.baseurl | prepend: site.url }}/feed.xml" title="RSS Feed"><i class="fas fa-rss-square"></i></a>
+            {% endif %}
+            {%- if site.resume -%}
+            <a href="{{site.resume}}" title="Resume"><i class="fa fa-file"></i></a>
             {% endif %}

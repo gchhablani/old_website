@@ -19,8 +19,8 @@ lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://gchhablani.github.io # the base hostname & protocol for your site
-baseurl: / # the subpath of your site, e.g. /blog/
-last_updated: false # set to true if you want to display last updated in the footer
+baseurl: "" # the subpath of your site, e.g. /blog/
+last_updated: true # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
 # -----------------------------------------------------------------------------
@@ -39,7 +39,7 @@ navbar_fixed: true
 footer_fixed: true
 
 # Dimensions
-max_width: 900px
+max_width: 800px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -58,8 +58,9 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 github_username: gchhablani # your GitHub user name
 gitlab_username: # your GitLab user name
 twitter_username: gchhablani_ # your Twitter handle
-linkedin_username: # your LinkedIn user name
+linkedin_username: gchhablani # your LinkedIn user name
 scholar_userid: IgPFpZYAAAAJ # your Google Scholar ID
+resume: /assets/pdf/Gunjan_Chhablani_Resume_01162022.pdf # Resume Link or PDF
 orcid_id: # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
@@ -106,6 +107,9 @@ collections:
       layout: post
     output: true
     permalink: /news/:path/
+  projects:
+    output: true
+    permalink: /projects/:path/
   papers:
     output: true
     permalink: /papers/:path/

@@ -1,0 +1,63 @@
+---
+layout: default
+---
+<!-- page.html -->
+        <div class="post">
+
+            <header class="post-header">
+                <h1 class="post-title">{{ page.title }}</h1>
+                <p class="post-description">{{ page.description }}</p>
+            </header>
+
+            <div class="projectinfo">
+                {% assign mentorsize = page.mentors | size %}
+                {% if mentorsize !=0 %}
+                <i> Mentor(s):
+                    {% for mentor in page.mentors %}
+                    <a href="{{ mentor.link }}">{{ mentor.name }}</a>,
+                    {% endfor %}
+                </i>
+                {% endif %}
+            
+                {% assign domainsize = page.domains | size %}
+                {% if domainsize !=0 %}
+                <i> Domain(s):
+                    {% for domain in page.domains %}
+                    {{ domain }}
+                    {% if forloop.last == false %}, {% endif %}
+                    {% endfor %}
+                </i>
+            
+                {% endif %}
+            </div>
+
+            <div>
+                {% if page.paperlink %}
+                <a class="paperlink" href="{{ page.paperlink }}"> Paper </a>
+                {% endif %}
+            
+                {% if page.preprintlink %}
+                <a class="paperlink" href="{{ page.preprintlink }}"> Pre-print </a>
+                {% endif %}
+            
+                {% if page.codelink %}
+                <a class="codelink" href="{{ page.codelink }}"> Code </a>
+                {% endif %}
+            </div>
+            
+            {% if page.img %}
+            <figure>
+                <img src="{{ page.img }}" title="{{ page.hovercaption}}" style="width:70%;height:auto;">
+                <figcaption>{{ page.caption }}</figcaption>
+            </figure>
+            {% endif %}
+
+            <article>
+                {{ content }}
+            </article>
+
+        </div>
+
+
+
+        

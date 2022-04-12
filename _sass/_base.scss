@@ -111,6 +111,18 @@ blockquote {
   margin-right: 1rem;
   width: 100%;
 
+  .contacts {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0.5rem;
+    width: 100%;
+    font-size: 2.2rem;
+    a {
+      display: inline-block;
+      flex-grow: 1;
+      text-align: center;
+    }
+  }
   .address {
     // margin-bottom: 5px;
     // margin-top: 5px;
@@ -617,4 +629,39 @@ a.paperlink, a.codelink {
     font-size: 0.9rem;
     color: $blue-color;;
   }
+}
+
+.paper-image{
+  min-height: 15rem;
+  max-height: 20rem;
+  max-width: 30rem;
+  padding-right: 2rem;
+  float: left;
+}
+
+#read-more-button {
+  text-align: center;
+  margin-top: -90px;
+  padding-top: 80px;
+  height: 110px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 1.0));
+  position: relative;
+  z-index: 2;
+}
+
+#read-more-button>a {
+  cursor: pointer;
+}
+
+#show-less-button {
+  text-align: center;
+  margin-top: -90px;
+  padding-top: 80px;
+  height: 110px;
+  position: relative;
+  z-index: 2;
+}
+
+#show-less-button>a {
+  cursor: pointer;
 }

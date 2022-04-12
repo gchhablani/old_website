@@ -1,11 +1,10 @@
-<!-- _includes/projects.html -->
+<!-- _includes/papers.html -->
 <div class="papers">
-    <h2>Projects</h2>
+    <h2>Papers</h2>
     {% assign sorted = site.papers | reverse %}
     {% for project in sorted %}
     <article class="post">
         <h4 id="{{ project.link_id }}">{{ project.title }}</h4>
-
         <div class="projectinfo">
             {% assign mentorsize = project.mentors | size %}
             {% if mentorsize !=0 %}
@@ -44,14 +43,14 @@
 
         {% if project.image %}
         <figure>
-            <img src="{{ project.image }}" title="{{ project.hovercaption}}" style="width:70%;height:auto;">
+            <img class="paper-image" src="{{ project.image }}" title="{{ project.hovercaption}}" style="width:70%;height:auto;">
             <figcaption>{{ project.caption }}</figcaption>
         </figure>
         {% endif %}
 
 
 
-        <div class="entry">
+        <div class="entry clearfix">
             {{ project.content }}
         </div>
         {% if forloop.last == false %}<hr class="project">{% endif %}
